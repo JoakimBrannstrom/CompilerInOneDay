@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\AST\TurtleAST\bin\Debug\TurtleAST.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\AST\TurtleAST\bin\Debug\TurtleAST.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\AST\TurtleAST\bin\Debug\TurtleAST.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\AST\TurtleAST\obj\Debug\TurtleAST.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\AST\TurtleAST\obj\Debug\TurtleAST.pdb

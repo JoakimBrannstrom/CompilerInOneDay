@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\Interpreter\TurtleInterpreter\bin\Debug\TurtleInterpreter.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\Interpreter\TurtleInterpreter\bin\Debug\TurtleInterpreter.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\Interpreter\TurtleInterpreter\bin\Debug\TurtleInterpreter.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\Interpreter\TurtleInterpreter\obj\Debug\TurtleInterpreter.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\Interpreter\TurtleInterpreter\obj\Debug\TurtleInterpreter.pdb

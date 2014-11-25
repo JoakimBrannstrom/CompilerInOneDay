@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\Parser\TurtleTutorial\bin\Debug\TurtleTutorial.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\Parser\TurtleTutorial\bin\Debug\TurtleTutorial.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\Parser\TurtleTutorial\bin\Debug\TurtleTutorial.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\Parser\TurtleTutorial\obj\Debug\TurtleTutorial.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\Parser\TurtleTutorial\obj\Debug\TurtleTutorial.pdb

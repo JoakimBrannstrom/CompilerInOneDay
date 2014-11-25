@@ -1,0 +1,8 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\bin\Debug\SmallBasicInterpreter.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\bin\Debug\SmallBasicInterpreter.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\bin\Debug\SmallBasicInterpreter.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\bin\Debug\FSharp.Core.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\bin\Debug\FSharp.Core.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\obj\Debug\SmallBasicInterpreter.fsprojResolveAssemblyReference.cache
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\obj\Debug\SmallBasicInterpreter.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicInterpreter\obj\Debug\SmallBasicInterpreter.pdb

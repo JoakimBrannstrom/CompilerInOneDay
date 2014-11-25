@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\Primer\FSharpToJava\bin\Debug\FSharpToJava.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\Primer\FSharpToJava\bin\Debug\FSharpToJava.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\Primer\FSharpToJava\bin\Debug\FSharpToJava.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\Primer\FSharpToJava\obj\Debug\FSharpToJava.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\Primer\FSharpToJava\obj\Debug\FSharpToJava.pdb

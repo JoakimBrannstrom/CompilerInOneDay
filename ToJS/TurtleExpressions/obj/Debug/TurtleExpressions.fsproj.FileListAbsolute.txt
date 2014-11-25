@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleExpressions\bin\Debug\TurtleExpressions.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleExpressions\bin\Debug\TurtleExpressions.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleExpressions\bin\Debug\TurtleExpressions.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleExpressions\obj\Debug\TurtleExpressions.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleExpressions\obj\Debug\TurtleExpressions.pdb

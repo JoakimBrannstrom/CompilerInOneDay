@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleProcs\bin\Debug\TurtleProcs.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleProcs\bin\Debug\TurtleProcs.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleProcs\bin\Debug\TurtleProcs.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleProcs\obj\Debug\TurtleProcs.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleProcs\obj\Debug\TurtleProcs.pdb

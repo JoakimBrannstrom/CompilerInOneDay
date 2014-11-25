@@ -1,0 +1,10 @@
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\ToIL\TurtleLibrary\bin\Debug\TurtleLibrary.dll
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\ToIL\TurtleLibrary\bin\Debug\TurtleLibrary.pdb
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\ToIL\TurtleLibrary\obj\Debug\TurtleLibrary.csprojResolveAssemblyReference.cache
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\ToIL\TurtleLibrary\obj\Debug\TurtleLibrary.dll
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\ToIL\TurtleLibrary\obj\Debug\TurtleLibrary.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleLibrary\bin\Debug\TurtleLibrary.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleLibrary\bin\Debug\TurtleLibrary.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleLibrary\obj\Debug\TurtleLibrary.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleLibrary\obj\Debug\TurtleLibrary.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleLibrary\obj\Debug\TurtleLibrary.pdb

@@ -1,0 +1,14 @@
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\bin\Debug\TurtleCanvas.XML
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\bin\Debug\TurtleCanvas.exe
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\bin\Debug\TurtleCanvas.pdb
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\bin\Debug\FSharp.Core.dll
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\bin\Debug\FSharp.Core.xml
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\obj\Debug\TurtleCanvas.exe
+C:\Users\ptrelford\documents\visual studio 2013\Projects\BuildStuffIn1Day\ToJS\TurtleCanvas\obj\Debug\TurtleCanvas.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\bin\Debug\TurtleCanvas.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\bin\Debug\TurtleCanvas.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\bin\Debug\TurtleCanvas.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\bin\Debug\FSharp.Core.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\obj\Debug\TurtleCanvas.fsprojResolveAssemblyReference.cache
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\obj\Debug\TurtleCanvas.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToJS\TurtleCanvas\obj\Debug\TurtleCanvas.pdb

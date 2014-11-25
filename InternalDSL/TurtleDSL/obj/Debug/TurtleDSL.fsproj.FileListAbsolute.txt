@@ -1,0 +1,5 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\InternalDSL\TurtleDSL\bin\Debug\TurtleDSL.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\InternalDSL\TurtleDSL\bin\Debug\TurtleDSL.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\InternalDSL\TurtleDSL\bin\Debug\TurtleDSL.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\InternalDSL\TurtleDSL\obj\Debug\TurtleDSL.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\InternalDSL\TurtleDSL\obj\Debug\TurtleDSL.pdb

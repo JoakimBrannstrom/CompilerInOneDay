@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>SmallBasicInterpreter</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.instruction">
+<summary>
+ Small Basic instruction
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.assign">
+<summary>
+ Assignment
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.expr">
+<summary>
+ Small Basic expression
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.value">
+<summary>
+ Small Basic value
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.logical">
+<summary>
+ Small Basic logical operation
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.comparison">
+<summary>
+ Small Basic comparison operaton
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Tutorial.arithmetic">
+<summary>
+ Small Basic arithmetic operation
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Tutorial.program">
+<summary>
+ Small Basic program
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Tutorial.run(Tutorial.instruction[])">
+<summary>
+ Runs program
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Tutorial.eval(System.Collections.Generic.Dictionary{System.String,Tutorial.value},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{Tutorial.value,Tutorial.value}},Tutorial.expr)">
+<summary>
+ Evaluates expressions
+</summary>
+</member>
+<member name="M:Tutorial.compare(Tutorial.value,Tutorial.value)">
+<summary>
+ Compares values
+</summary>
+</member>
+<member name="M:Tutorial.|AsDoubles|_|(Tutorial.value,Tutorial.value)">
+<summary>
+ Coerces a tuple of numeric values to double
+</summary>
+</member>
+<member name="M:Tutorial.toBool(Tutorial.value)">
+<summary>
+ Converts value to bool
+</summary>
+</member>
+<member name="M:Tutorial.toInt(Tutorial.value)">
+<summary>
+ Converts value to int
+</summary>
+</member>
+<member name="M:Tutorial.toObj(Tutorial.value)">
+<summary>
+ Converts value to obj
+</summary>
+</member>
+<member name="M:Tutorial.fromObj(System.Object)">
+<summary>
+ Converts value to obj
+</summary>
+</member>
+<member name="T:Tutorial">
+
+</member>
+</members>
+</doc>

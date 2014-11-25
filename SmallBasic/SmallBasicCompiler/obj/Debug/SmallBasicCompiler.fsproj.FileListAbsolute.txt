@@ -1,0 +1,42 @@
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.exe.config
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.XML
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.exe
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.pdb
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\FParsec.dll
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\FParsecCS.dll
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\FSharp.Core.dll
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicLibrary.dll
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\FParsec.xml
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\FParsecCS.xml
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\bin\Debug\FSharp.Core.xml
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.fsprojResolveAssemblyReference.cache
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.exe
+C:\Users\ptrelford\Documents\Visual Studio 2012\Projects\24\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.pdb
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.exe.config
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.XML
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.exe
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.pdb
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\FParsec.dll
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\FParsecCS.dll
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\FSharp.Core.dll
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicLibrary.dll
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\FParsec.xml
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\FParsecCS.xml
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\bin\Debug\FSharp.Core.xml
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.fsprojResolveAssemblyReference.cache
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.exe
+C:\Users\ptrelford\Documents\Visual Studio 2013\Projects\BuildStuffIn1Day\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.exe.config
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicCompiler.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\FParsec.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\FParsecCS.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\FSharp.Core.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\SmallBasicLibrary.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\FParsec.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\FParsecCS.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\bin\Debug\FSharp.Core.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.fsprojResolveAssemblyReference.cache
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\SmallBasic\SmallBasicCompiler\obj\Debug\SmallBasicCompiler.pdb

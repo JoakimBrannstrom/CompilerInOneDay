@@ -1,0 +1,11 @@
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\TurtleGraphics.exe.config
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\TurtleGraphics.XML
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\TurtleGraphics.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\TurtleGraphics.pdb
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\FParsec.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\FParsecCS.dll
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\FParsec.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\bin\Debug\FParsecCS.xml
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\obj\Debug\TurtleGraphics.fsprojResolveAssemblyReference.cache
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\obj\Debug\TurtleGraphics.exe
+D:\Dropbox\Dev\Git\CompilerInOneDay\ToIL\TurtleGraphics\obj\Debug\TurtleGraphics.pdb
