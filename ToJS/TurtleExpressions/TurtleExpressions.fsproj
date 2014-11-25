@@ -57,6 +57,8 @@
     <Content Include="Fractal tree.txt" />
     <None Include="Turtle.html" />
     <Compile Include="TurtleExpressions.fsx" />
+    <None Include="Turtle2.html" />
+    <None Include="Turtle3.html" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

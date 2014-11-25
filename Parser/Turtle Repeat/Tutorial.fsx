@@ -75,13 +75,13 @@ module Parser =
       (pstring "right" <|> pstring "rt") >>. spaces1 >>. pfloat 
       |>> fun x -> Right(int x)
 
-   let prepeat, prepeatimpl = createParserForwardedToRef ()
+   let prepeat, prepeatimpl = createParserForwardedToRef () // <-- Here is the magic!
 
    let pcommand = pforward <|> pleft <|> pright <|> prepeat
 
    let block = between (pstring "[") (pstring "]") (many1 (pcommand .>> spaces))
 
-   prepeatimpl := 
+   prepeatimpl := // <-- mutable, update reference
       pstring "repeat" >>. spaces1 >>. pfloat .>> spaces .>>. block
       |>> fun (n,commands) -> Repeat(int n, commands)
 

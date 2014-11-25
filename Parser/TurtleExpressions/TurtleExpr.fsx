@@ -221,9 +221,17 @@ module Parser =
       | Success(result,_,_) -> result
       | Failure(msg,_,_) -> failwith msg
 
+//      repeat 4 [ifelse 1=0 [forward 10 right 90] [forward 50 right 90]]
+
 let code = "
+   to smallsquare
+     [forward 10 right 90]
+   end
+   to bigsquare
+     [forward 50 right 90]
+   end
    to square
-     repeat 4 [ifelse 1=0 [forward 10 right 90] [forward 50 right 90]]
+    [bigsquare bigsquare smallsquare smallsquare]
    end
    to flower
      repeat 36 [right 10 square]

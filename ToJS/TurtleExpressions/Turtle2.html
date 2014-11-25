@@ -1,0 +1,70 @@
+<html>
+<body>
+<canvas id="myCanvas" width="600" height="600" style="border: 1px solid #000000;"></canvas>
+<script type="text/javascript">
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	var width = 600;
+	var height = 600;
+	var x = width / 2;
+	var y = 590;
+	ctx.moveTo(x, y);
+	var a = -90.0;
+	var lineWidth = 1;
+
+	function getX(n) { return x + Math.cos((a * Math.PI) / 180.0) * n; }
+	function getY(n) { return y + Math.sin((a * Math.PI) / 180.0) * n; }
+
+	function forward(n, size) {
+		size = Math.round(size);
+
+		ctx.beginPath();
+		ctx.moveTo(x, y);
+		x = getX(n);
+		y = getY(n);
+		ctx.lineWidth = size;
+		ctx.lineTo(x, y);
+		ctx.stroke();
+	}
+
+	function back(n) {
+		a = a - 180;
+
+		x = getX(n);
+		y = getY(n);
+		ctx.moveTo(x, y);
+
+		a = a + 180;
+	}
+
+	function turn(n) { a += n; }
+	function left(n) { turn(-n); }
+	function right(n) { turn(n); }
+
+    // set-random-position - Note: need to escape minus sign
+	function set_random_position() {
+		x = Math.random() * width;
+		y = Math.random() * height;
+		ctx.moveTo(x, y);
+	}
+
+    // Generated JS
+
+function tree(depth,length,scale,angle,size) {
+	if(depth==0.000000) {
+		return;
+	}
+	forward(length, size);
+	right(angle);
+	tree(depth-1.000000,length*scale,scale,angle,size/2.000000);
+	left(2.000000*angle);
+	tree(depth-1.000000,length*scale,scale,angle,size/2.000000);
+	right(angle);
+	back(length);
+}
+tree(15.000000,160.000000,0.700000,30.000000,50.000000);
+
+</script>
+</body>
+</html>
+

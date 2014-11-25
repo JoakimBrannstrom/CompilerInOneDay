@@ -1,11 +1,15 @@
 ﻿type name = string
 type param = string
+
 type arithmetic =
    Add | Subtract | Multiply | Divide
+
 type comparison =
    Eq | Ne | Lt | Gt | Le | Ge
+
 type logical =
    And | Or
+
 type expr =
    | Number of float 
    | String of string
@@ -14,11 +18,13 @@ type expr =
    | Arithmetic of expr * arithmetic * expr
    | Comparison of expr * comparison * expr
    | Logical of expr * logical * expr
+
 type condition =
    | Condition of expr * comparison * expr
+
 type command =
    // Begin built-in functions
-   | Forward of expr
+   | Forward of expr * expr
    | Back of expr
    | Left of expr
    | Right of expr
@@ -49,24 +55,26 @@ tree 10 80 0.7 30
 *)
 let program = 
    [
-   Proc("tree", ["depth"; "length"; "scale"; "angle"],
+   Proc("tree", ["depth"; "length"; "scale"; "angle"; "size"],
         [
         If(Condition(Arg("depth"),Eq,Number(0.0)),[Stop])
-        Forward(Arg("length"))
+        Forward(Arg("length"),Arg("size"))
         Right(Arg("angle"))
         Call("tree",[Arithmetic(Arg("depth"),Subtract,Number(1.0));
                      Arithmetic(Arg("length"),Multiply,Arg("scale"));
                      Arg("scale");
-                     Arg("angle")])
+                     Arg("angle");
+                     Arithmetic(Arg("size"),Divide,Number(2.0))])
         Left(Arithmetic(Number(2.0),Multiply,Arg("angle")))
         Call("tree",[Arithmetic(Arg("depth"),Subtract,Number(1.0));
                      Arithmetic(Arg("length"),Multiply,Arg("scale"));
                      Arg("scale");
-                     Arg("angle")])
+                     Arg("angle");
+                     Arithmetic(Arg("size"),Divide,Number(2.0))])
         Right(Arg("angle"))
         Back(Arg("length"))
         ])
-   Call("tree", [Number(10.0); Number(80.0); Number(0.7); Number(30.0)])
+   Call("tree", [Number(15.0); Number(160.0); Number(0.7); Number(30.0); Number(50.0)])
    ]
 
 open System
@@ -80,7 +88,7 @@ let rec emitBlock indent commands =
 and emitCommand indent command =
    let tabs = String.replicate indent "\t"
    match command with
-   | Forward(e) -> sprintf "forward(%s);" (emitExpr e)
+   | Forward(e,w) -> sprintf "forward(%s, %s);" (emitExpr e) (emitExpr w)
    | Back(e) -> sprintf "back(%s);" (emitExpr e)
    | Left(e) -> sprintf "left(%s);" (emitExpr e)
    | Right(e) -> sprintf "right(%s);" (emitExpr e)
@@ -93,7 +101,8 @@ and emitCommand indent command =
       sprintf "if(%s) {\r\n%s%s}" condition (emitBlock (indent+1) commands) tabs
    | Stop -> "return;"
    | Proc(name,``params``,commands) ->
-      sprintf "\r\nfunction %s(%s) {\r\n%s%s}" 
+      sprintf "\r\n%sfunction %s(%s) {\r\n%s%s}" 
+        tabs
          name 
          (String.concat "," ``params``) 
          (emitBlock (indent+1) commands) 
@@ -104,7 +113,7 @@ and emitCommand indent command =
    |> fun s -> tabs + s + "\r\n"
 and emitExpr expr =
    match expr with
-   | Number(n) -> String.Format("{0}", n)
+   | Number(n) -> sprintf "%f" n //String.Format("{0}", n)
    | String(s) -> sprintf "\"%s\"" s
    | Arg(s) -> s
    | Var(s) -> s
@@ -126,4 +135,73 @@ and fromComparison op =
    | Le -> "<="
    | Ge -> ">=" 
 
-emitBlock 0 program
+
+
+let generatedJS = emitBlock 0 program
+
+let html = 
+   sprintf """<html>
+<body>
+<canvas id="myCanvas" width="600" height="600" style="border: 1px solid #000000;"></canvas>
+<script type="text/javascript">
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	var width = 600;
+	var height = 600;
+	var x = width / 2;
+	var y = 590;
+	ctx.moveTo(x, y);
+	var a = -90.0;
+	var lineWidth = 1;
+
+	function getX(n) { return x + Math.cos((a * Math.PI) / 180.0) * n; }
+	function getY(n) { return y + Math.sin((a * Math.PI) / 180.0) * n; }
+
+	function forward(n, size) {
+		size = Math.round(size);
+
+		ctx.beginPath();
+		ctx.moveTo(x, y);
+		x = getX(n);
+		y = getY(n);
+		ctx.lineWidth = size;
+		ctx.lineTo(x, y);
+		ctx.stroke();
+	}
+
+	function back(n) {
+		a = a - 180;
+
+		x = getX(n);
+		y = getY(n);
+		ctx.moveTo(x, y);
+
+		a = a + 180;
+	}
+
+	function turn(n) { a += n; }
+	function left(n) { turn(-n); }
+	function right(n) { turn(n); }
+
+    // set-random-position - Note: need to escape minus sign
+	function set_random_position() {
+		x = Math.random() * width;
+		y = Math.random() * height;
+		ctx.moveTo(x, y);
+	}
+
+    // Generated JS
+%s
+</script>
+</body>
+</html>
+
+""" generatedJS
+
+open System.IO
+
+//let path = Path.Combine(__SOURCE_DIRECTORY__, "TurtleGen.html")
+let path = Path.Combine(__SOURCE_DIRECTORY__, "Turtle2.html")
+File.WriteAllText(path, html)
+
+path |> System.Diagnostics.Process.Start 

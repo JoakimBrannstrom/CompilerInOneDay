@@ -1,9 +1,8 @@
-﻿<html>
+<html>
 <body>
-<canvas id="myCanvas" width="400" height="400"
-style="border:1px solid #000000;">
-</canvas>
-<script>
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+<script type="text/javascript">
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var width = 400;
@@ -19,9 +18,8 @@ function forward(n) {
   ctx.lineTo(x,y);
   ctx.stroke();
 }
-function turn(n) {
-  a += n;
-}
+
+function turn(n) { a += n; }
 
 // set-random-position - Note: need to escape minus sign
 function set_random_position() {
@@ -30,13 +28,23 @@ function set_random_position() {
   ctx.moveTo(x,y); 
 }
 
-for(_i1 = 0; _i1< 50; _i1++) {
-  set_random_position();
-  for(_i2 = 0; _i2<36; _i2++) {
-    forward(10);
-    turn(10); 
-  }
+// Generated JS
+function square() {
+for(var _1 = 0; _1 < 4; _1++) {
+forward(50);turn(90);
 }
+}
+function flower() {
+for(var _2 = 0; _2 < 36; _2++) {
+turn(10);square();
+}
+}
+function garden(count) {
+for(var _3 = 0; _3 < count; _3++) {
+set_random_position();flower();
+}
+}
+garden(5);
 
 </script>
 </body>

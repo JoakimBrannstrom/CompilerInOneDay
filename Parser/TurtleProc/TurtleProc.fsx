@@ -135,9 +135,9 @@ module Parser =
 
    let pproc =
       pheader .>>. pbody .>> pfooter
-      |>> fun ((name,ps),body) -> 
-        procs := (name,ps)::!procs; updateCalls()
-        Proc(name, ps, body)
+      |>> fun ((name,parameters),body) -> 
+        procs := (name,parameters)::!procs; updateCalls()
+        Proc(name, parameters, body)
 
    let parser =
       spaces >>. (sepEndBy (pcommand <|> pproc) spaces1)
@@ -146,6 +146,7 @@ module Parser =
       match run parser code with
       | Success(result,_,_) -> result
       | Failure(msg,_,_) -> failwith msg
+
 
 let code = "
    to square
@@ -159,5 +160,17 @@ let code = "
    end
    garden 25
    "
+(*
+let code = "
+   to pattern :factor
+       [forward (factor * 16) right (factor * 10) ]
+   end
+   repeat 36 pattern
+   "
+*)
 let program = Parser.parse code
 Interpreter.execute program
+
+
+
+

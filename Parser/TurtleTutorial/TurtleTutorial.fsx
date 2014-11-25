@@ -27,20 +27,20 @@ let test p str =
     | Success(result, _, _)   -> printfn "Success: %A" result
     | Failure(errorMsg, _, _) -> printfn "Failure: %s" errorMsg
 
-test pfloat "__"
+test pfloat "1.5"
 
 // ***************************************************
 // Task 2 - Parse "fd"
 // ***************************************************
 
 let fd = pstring "fd"
-test fd "__"
+test fd "fd"
 
 // ***************************************************
 // Task 3 - Parsing "forward 10"
 // ***************************************************
 
-let forward = pstring "forward" >>. spaces >>. pfloat
+let forward = pstring "forward" >>. spaces1 >>. pfloat
 test forward "forward 10"
 
 // ***************************************************
@@ -56,11 +56,15 @@ test forward "forward10"
 
 let pfwd = forward |>> fun n -> Forward(int n)
 test pfwd "forward 10"
+
 // TODO:
-// let plt = ...
-// test plt "lt 10
-// let prt = ...
-// test prt "rt 10"
+let left = pstring "left" >>. spaces1 >>. pfloat
+let plt = left |>> fun n -> Turn(int -n)
+test plt "left 10"
+
+let right = pstring "right" >>. spaces1 >>. pfloat
+let prt = right |>> fun n -> Turn(int n)
+test prt "right 10"
 
 // ***************************************************
 // Task 6 - Parsing fd or forward, lt or left etc.
@@ -73,8 +77,15 @@ let pforward = (pstring "fd" <|> pstring "forward") >>. spaces1 >>. pfloat
 test pforward "forward 10"
 test pforward "fd 10"
 // TODO:
-// let pleft =
-// test pleft "lt 10"
+let pleft = (pstring "lt" <|> pstring "left") >>. spaces1 >>. pfloat
+               |>> fun n -> Turn(int -n)
+test pleft "lt 10"
+test pleft "left 10"
+
+let pright = (pstring "rt" <|> pstring "right") >>. spaces1 >>. pfloat
+               |>> fun n -> Turn(int n)
+test pright "rt 10"
+test pright "right 10"
 // let pright =
 // test pright "rt 10"
 
@@ -84,10 +95,13 @@ test pforward "fd 10"
 // ***************************************************
 
 // TODO: handle forward, left or right
-let pcommand = pforward // ...
+let pcommand = (pforward <|> pleft <|> pright) // ...
 
 test pcommand "forward 10"
+test pcommand "fd 10"
 test pcommand "left 90"
+test pcommand "lt 90"
+test pcommand "right 180"
 test pcommand "rt 180"
 
 // ***************************************************
@@ -104,7 +118,7 @@ test pparse "forward 10forward 10"
 // Hint: use spaces function
 // ***************************************************
 
-let pparsews = many (pcommand (*TODO:handle spaces*))
+let pparsews = many (pcommand .>> spaces)
 test pparsews "forward 10 right 90 forward 10"
 
 // ***************************************************
@@ -117,8 +131,14 @@ let parse parser s =
     | Success(result,_,_) -> result
     | Failure(msg,_,_) -> failwith msg
 
-let triangle = parse pparsews "forward 50 right 120 forward 50"
+let triangle = parse pparsews "forward 50 right 120 forward 50 right 120 forward 50"
 execute triangle
+
+(*
+let triangleCode = "forward 50 right 120 forward 50 right 120 forward 50"
+let star = parse pparsews (triangleCode + " right 60 forward 25 " + triangleCode) 
+execute star
+*)
 
 // ***************************************************
 // Task 11 - Parsing "[forward 50]"
@@ -132,7 +152,8 @@ test pblock1 "[forward 50]"
 // Task 12 - Parsing "[forward 50 right 90]"
 // ***************************************************
 
-let pblock = between (pstring "[") (pstring "]") ( (*TODO: handle many with ws*) pcommand)
+// let pblock = between (pstring "[") (pstring "]") (many (sepBy spaces1 pcommand))
+let pblock = between (pstring "[") (pstring "]") (many (spaces >>. pcommand))
 test pblock "[forward 50 right 90]"
 
 // ***************************************************
@@ -140,12 +161,12 @@ test pblock "[forward 50 right 90]"
 // ***************************************************
 
 // TODO: uncomment this
-//let prepeat = pstring "repeat" >>. spaces1 >>. pfloat .>> spaces .>>. pblock
-//              |>> fun (n,commands) -> Repeat(int n,commands)
-//test prepeat "repeat 36 [forward 10 right 10]"
+let prepeat = pstring "repeat" >>. spaces1 >>. pfloat .>> spaces .>>. pblock
+              |>> fun (n,commands) -> Repeat(int n,commands)
+test prepeat "repeat 36 [forward 10 right 10]"
 
-//let circle = [parse prepeat "repeat 36 [forward 10 right 10]"]
-//execute circle
+let circle = [parse prepeat "repeat 36 [forward 10 right 10]"]
+execute circle
 
 // ***************************************************
 // Additional Task 14 - Parse "repeat 10 [right 36 repeat 5 [forward 54 right 72]]"
